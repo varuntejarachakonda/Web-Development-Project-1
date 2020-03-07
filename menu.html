@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+            }
+            ul.main-menu, ul.sub-menu{
+                padding: 0px 20px;
+                margin: 0;
+                list-style-type: none;
+                background-color: grey;
+            }
+
+            ul.main-menu > li {
+                position: relative;
+                display: inline-block;
+                width: 150px;
+                padding: 10px 0;
+            }
+            ul.sub-menu{
+                position: absolute;
+                top: 37px;
+                left: 0px;
+                padding: 10px;
+                display: none;
+            }
+            ul.main-menu> li:hover > ul.sub-menu {
+                display: block;
+                background-color: grey;
+            }
+            li:hover{
+                background-color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="main-menu">
+            <li>
+                Electronics
+                <ul class="sub-menu">
+                    <li>Phones</li>
+                    <li>Watchs</li>
+                    <li>Laptops</li>
+                    <li>Music System</li>
+                </ul>
+            </li>
+            <li>Books</li>
+            <li>Cloths</li>
+            <li>Groceries</li>
+        </ul>
+
+    </body>
+</html>
